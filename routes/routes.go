@@ -16,6 +16,7 @@ func Routes() {
 	v1 := e.Group("/v1")
 	v1.GET("/employee", handlers.ListEmployee)
 	v1.POST("/employee", handlers.CreateEmployee)
+	v1.DELETE("/employee/:id", handlers.DeleteEmployee)
 
 	log.Fatal(e.Start(os.Getenv("API_PORT")))
 }
