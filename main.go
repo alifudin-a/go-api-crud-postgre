@@ -1,13 +1,9 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/alifudin-a/go-api-crud-postgre/db"
-	_ "github.com/lib/pq"
+	"github.com/alifudin-a/go-api-crud-postgre/routes"
 )
 
 func main() {
-	fmt.Println("GO")
-	db.DBConn()
+	routes.Routes()
 }
