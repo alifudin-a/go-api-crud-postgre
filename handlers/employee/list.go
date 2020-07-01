@@ -12,6 +12,7 @@ import (
 	_ "github.com/lib/pq"
 )
 
+// ListEmployee : list all employee
 func ListEmployee(c echo.Context) (err error) {
 	db := db.DBConn()
 
